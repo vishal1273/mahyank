@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enquiry Form</title>        
+    </head>
+    <body>
+        <h1>Enquiry Form</h1>
+        <form action="save_enq">
+            <table border="1">
+                <tr>
+                    <td>NAME</td>
+                    <td> <input type="text" name="name"/> </td>
+                </tr>
+                <tr>
+                    <td>PHONE</td>
+                    <td> <input type="text" name="phone"/> </td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td>
+                        <input type="radio" name="gender" value="M"/> Male 
+                        <input type="radio" name="gender" value="F"/> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>CITY</td>
+                    <td> 
+                        <select name="city">
+                            <option value="BPL">Bhopal</option>
+                            <option value="MUM">Mumbai</option>
+                            <option value="DEL">Delhi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ADRESS</td>
+                    <td>
+                        <textarea cols="30" rows="4" name="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>COURSES</td>
+                    <td>
+                        <input type="checkbox" name="courses" value="Java"/> Java
+                        <input type="checkbox" name="courses" value="Spring"/> Spring
+                        <input type="checkbox" name="courses" value="Android"/> Android
+                    </td>
+                </tr>
+                 <tr>                   
+                     <td colspan="2" style="text-align: center">
+                        <button>Submit</button>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </body>
+</html>
